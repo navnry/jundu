@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded',
+                recalc, false
+            )
+        })(document, window);
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="menu on">
+        <i class="iconfont normal">&#xe604;</i>
+        <i class="iconfont close">&#xe60b;</i>
+    </div>
+    <div class="logo">
+        <h1>
+            <a href=""></a>
+        </h1>
+    </div>
+    <div class="contact">
+        <i class="iconfont">&#xe601;</i>
+        <span>全国订房热线：400-181-1188</span>
+        <ul>
+            <li>
+                <i class="iconfont">&#xe6a6;</i>
+                <img src="images/case/code.png" alt="">
+            </li>
+            <li>
+                <i class="iconfont">&#xe67e;</i>
+                <img src="images/case/xcx01.png" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="nav">
+    <ul class="pormenu">
+        <li><a href="">首页</a></li>
+        <li class="on">
+            <a href="javascript:void (0)" class="tab_c">感受君都</a>
+            <i class="iconfont">&#xe60c;</i>
+            <ul class="submenu">
+                <li><a href="">品牌架构</a></li>
+                <li><a href="">君都故事</a></li>
+                <li><a href="">君都文化</a></li>
+                <li><a href="">君都服务</a></li>
+                <li><a href="">荣誉证书</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:void (0)" class="tab_c">品牌故事</a>
+            <i class="iconfont">&#xe60c;</i>
+            <ul class="submenu">
+                <li><a href="">品牌架构</a></li>
+                <li><a href="">君都故事</a></li>
+                <li><a href="">君都文化</a></li>
+            </ul>
+        </li>
+        <li><a href="">房型体验</a></li>
+        <li><a href="">招商加盟</a></li>
+        <li><a href="">采购招标</a></li>
+        <li>
+            <a href="javascript:void (0)" class="tab_c">新闻资讯</a>
+            <i class="iconfont">&#xe60c;</i>
+            <ul class="submenu">
+                <li><a href="">品牌架构</a></li>
+                <li><a href="">君都故事</a></li>
+                <li><a href="">君都文化</a></li>
+            </ul>
+        </li>
+        <li><a href="">会员权益</a></li>
+        <li>
+            <a href="javascript:void (0)" class="tab_c">联系我们</a>
+            <i class="iconfont">&#xe60c;</i>
+            <ul class="submenu">
+                <li><a href="">品牌架构</a></li>
+                <li><a href="">君都故事</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="swiper-container swiper-container-v">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:url(images/home/part1.png) center /cover no-repeat">
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1.png) center /cover no-repeat"></div>
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1-1.jpg) center /cover no-repeat"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background:url(images/home/part1.png) center /cover no-repeat">
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1.png) center /cover no-repeat"></div>
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1-1.jpg) center /cover no-repeat"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background:url(images/home/part1.png) center /cover no-repeat">
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1.png) center /cover no-repeat"></div>
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1-1.jpg) center /cover no-repeat"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background:url(images/home/part1.png) center /cover no-repeat">
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1.png) center /cover no-repeat"></div>
+                        <div class="swiper-slide"
+                             style="background:url(images/home/part1-1.jpg) center /cover no-repeat"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-1">
+        <div class="main">
+            <ul>
+                <li>
+                    <a href="">网站首页</a>
+                </li>
+                <li>
+                    <a href="">感受君都</a>
+                    <div class="has_detail">
+                        <ul>
+                            <li><a href="">君都架构</a></li>
+                            <li><a href="">君都故事</a></li>
+                            <li><a href="">君都文化</a></li>
+                            <li><a href="">君都服务</a></li>
+                            <li><a href="">荣誉资质</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">君都品牌</a>
+                    <div class="has_detail">
+                        <ul>
+                            <li><a href="">君都酒店</a></li>
+                            <li><a href="">君都云酒店</a></li>
+                            <li><a href="">君铂雅酒店</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">房型体验</a></li>
+                <li><a href="">招商加盟</a></li>
+                <li><a href="">采购招标</a></li>
+                <li>
+                    <a href="">新闻资讯</a>
+                    <div class="has_detail">
+                        <ul>
+                            <li><a href="">酒店动态</a></li>
+                            <li><a href="">促销活动</a></li>
+                            <li><a href="">新店开业</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">会员权益</a></li>
+                <li>
+                    <a href="">联系我们</a>
+                    <div class="has_detail">
+                        <ul>
+                            <li><a href="">人才招聘</a></li>
+                            <li><a href="">联系方式</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-2">
+        <div class="main">
+            <span>COPYRIGHT@2019长沙君都酒店管理有限公司 ALL RIGHTS RESERVED 备案号：湘ICP备17000805号    技术支持：<a
+                    href="http://www.zhitouweilai.com">智投未来</a></span>
+        </div>
+    </div>
+    <div class="footer-3">
+        <span class="contxt-show">扫码预定</span>
+        <div class="main">
+            <div class="left">
+                <span class="contxt">君健于行 · 归心于都</span>
+            </div>
+            <div class="right">
+                <div>
+                    <span class="sys">扫码预订</span>
+                    <i class="iconfont pointer">&#xe606;</i>
+                    <img src="images/case/wechat.png" alt="" class="pic-xcx">
+                    <img src="images/case/xcx.png" alt="" class="pic-wechat">
+                    <i class="iconfont" id="close_foot">&#xe70e;</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    $(function () {
+        var snum = $(".swiper-container-v>.swiper-wrapper>.swiper-slide").length;
+        var vSwiper = new Swiper(".swiper-container-v", {
+            direction: 'vertical',
+            mousewheel: true,
+            speed: 700,
+            pagination: {
+                el: '.swiper-container-v>.swiper-pagination',
+                clickable: true,
+            },
+
+            on: {
+                slideChangeTransitionEnd: function () {
+                    if (snum === this.activeIndex + 1) {
+                        vSwiper.mousewheel.disable()
+                    }
+                }
+            },
+        });
+
+        window.addEventListener("DOMContentLoaded", function () {
+            var body_fixed = {
+                init: function () {
+                    window.onscroll = this.throttle(this.isFixed, 0);
+                    this.isFixed()
+                }, isFixed: function () {
+                    H = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset;
+                    if (H > 0) {
+                        vSwiper.mousewheel.disable()
+                    } else {
+                        vSwiper.mousewheel.enable()
+                    }
+                }, throttle: function (fn, delay) {
+                    var timer = null;
+                    var _this = this;
+                    return function () {
+                        var context = _this, args = arguments;
+                        clearTimeout(timer);
+                        timer = setTimeout(function () {
+                            fn.apply(context, args)
+                        }, delay)
+                    }
+                }
+            };
+            body_fixed.init()
+        });
+    });
+
+    var hSwiper = new Swiper(".swiper-container-h", {
+        speed: 800,
+        pagination: {
+            el: '.swiper-container-h>.swiper-pagination',
+            clickable: true,
+        },
+    })
+
+
+    //
+</script>
+<script>
+    $(".menu").click(function () {
+        $(this).toggleClass("on");
+        $(".nav").toggleClass("close")
+    })
+    $("#close_foot").click(function (e) {
+        e.stopPropagation();
+        $(".footer-3").animate({
+            width: "1.2rem",
+            height: ".98rem",
+            borderTopRightRadius: "1rem",
+            borderBottomRightRadius: "1rem"
+        }, 500);
+        $(".pic-wechat").animate({
+            left: "-.3rem",
+            borderTopRightRadius: "1rem",
+            borderBottomRightRadius: "1rem",
+            borderTopLeftRadius: "1rem",
+            borderBottomLeftRadius: "1rem",
+        }, 500);
+        $(".sys").hide();
+        $(".pic-xcx").hide();
+        $(".pointer").hide();
+        $(".contxt").hide();
+        $(this).hide();
+        $(".contxt-show").show()
+    });
+    $(".footer-3").click(function (e) {
+        if ($(".contxt").css("display") === "none") {
+            $(".footer-3").animate({
+                width: "100%",
+                height: ".98rem",
+                bottom: "0",
+                border: "none",
+                borderRadius: "0"
+            }, 500);
+            $(".contxt-show").hide();
+            $(".sys").show();
+            $(".pic-xcx").show();
+            $(".pointer").show();
+            $(".contxt").show();
+            $("#close_foot").show();
+            $(".pic-wechat").animate({
+                left: "0",
+                borderTopRightRadius: "0",
+                borderBottomRightRadius: "0",
+                borderTopLeftRadius: "0",
+                borderBottomLeftRadius: "0",
+            }, 500)
+        }
+    });
+
+    $(".tab_c").click(function () {
+        $(this).siblings(".submenu").slideToggle(300).parent("li").find('li').children('.submenu').slideUp(0)
+        $(this).siblings("i").toggleClass("on");
+        $(this).toggleClass("on")
+    })
+</script>
+script
