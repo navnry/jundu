@@ -28,13 +28,11 @@ html::-webkit-scrollbar {
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: "SourceHanSerifSC";
     src: url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.eot"); /* IE9 */
-    src: url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.svg#SourceHanSerifSC") format("svg"); /* iOS 4.1- */
+    src: url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.woff") format("woff"), /* chrome、firefox */ url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */ url("../fonts/font/SourceHanSerifSC/SourceHanSerifSC.svg#SourceHanSerifSC") format("svg"); /* iOS 4.1- */
     font-style: normal;
     font-weight: normal;
 }
@@ -469,8 +467,8 @@ html::-webkit-scrollbar {
     font-size: 1rem;
     font-family: lixuke, sans-serif;
     position: absolute;
-    right: -1.2rem;
-    top: -1.3rem;
+    right: -1rem;
+    top: -1rem;
     font-weight: unset;
 }
 
@@ -480,8 +478,8 @@ html::-webkit-scrollbar {
     height: .33rem;
     background: url("../images/home/zzzz.png") center /cover no-repeat;
     position: absolute;
-    right: -1.3rem;
-    top: .3rem;
+    right: -1rem;
+    top: .2rem;
 }
 
 .swiper-container-v > .swiper-wrapper > .swiper-slide .column:after {
@@ -528,6 +526,55 @@ html::-webkit-scrollbar {
 .swiper-container-h .swiper-pagination {
     bottom: .2rem;
 }
+
+.swiper-layer {
+    width: 7.43rem;
+    height: 3.02rem;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    padding: .1rem .5rem
+}
+
+.swiper-layer h4 {
+    font-size: .48rem;
+    line-height: .78rem;
+    text-align: center;
+    color: #000;
+    font-family: 宋体, sans-serif;
+    font-weight: bold;
+}
+
+.swiper-layer h4:after {
+    content: '';
+    display: block;
+    width: .6rem;
+    height: .04rem;
+    background-color: #bd9466;
+    margin: auto
+}
+
+.swiper-layer h5 {
+    font-size: .36rem;
+    color: #333;
+    text-align: center;
+    padding: .2rem 0
+}
+
+.swiper-layer p {
+    font-size: .18rem;
+    color: #444;
+    text-align: center;
+    line-height: .3rem;
+    padding-top: .1rem
+}
+
 
 /**/
 .footer {

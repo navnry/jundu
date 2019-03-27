@@ -1,7 +1,7 @@
 $(".menu").click(function () {
     $(this).toggleClass("on");
     $(".nav").toggleClass("close")
-})
+});
 $("#close_foot").click(function (e) {
     e.stopPropagation();
     $(".footer-3").animate({
@@ -49,8 +49,8 @@ $(".footer-3").click(function (e) {
     }
 });
 
-$(".tab_c").click(function () {
+$(".cli_op").click(function () {
     $(this).siblings(".submenu").slideToggle(300).parent("li").find('li').children('.submenu').slideUp(0)
-    $(this).siblings("i").toggleClass("on");
+    $(this).siblings("a").toggleClass("on");
     $(this).toggleClass("on")
 })
