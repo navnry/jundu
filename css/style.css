@@ -457,8 +457,8 @@ html::-webkit-scrollbar {
 
 .swiper-container-v > .swiper-wrapper > .swiper-slide .column p {
     font-family: SourceHanSerifSC, sans-serif;
-    font-size: .24rem;
-    line-height: .48rem;
+    font-size: .2rem;
+    line-height: .4rem;
     position: relative;
     z-index: 2;
     color: #000000;

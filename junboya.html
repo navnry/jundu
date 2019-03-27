@@ -7,22 +7,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="fonts/iconfont/iconfont.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        (function (doc, win) {
-            var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-                    docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
-                };
-            if (!doc.addEventListener) return;
-            win.addEventListener(resizeEvt, recalc, false);
-            doc.addEventListener('DOMContentLoaded',
-                recalc, false
-            )
-        })(document, window);
-    </script>
+    <script src="js/rem.js"></script>
 </head>
 <body>
 <div class="header">
@@ -52,8 +37,8 @@
 </div>
 <div class="nav">
     <ul class="pormenu">
-        <li><a href="">首页</a></li>
-        <li class="on">
+        <li class="on"><a href="index.html">首页</a></li>
+        <li>
             <a href="javascript:void (0)" class="tab_c">感受君都</a>
             <i class="iconfont cli_op">&#xe60c;</i>
             <ul class="submenu">
@@ -65,17 +50,17 @@
             </ul>
         </li>
         <li>
-            <a href="javascript:void (0)" class="tab_c">品牌故事</a>
+            <a href="javascript:void (0)" class="tab_c">君都品牌</a>
             <i class="iconfont cli_op">&#xe60c;</i>
             <ul class="submenu">
-                <li><a href="">君都酒店</a></li>
-                <li><a href="">君都云酒店</a></li>
-                <li><a href="">君铂雅酒店</a></li>
+                <li><a href="jundujiudian.html">君都酒店</a></li>
+                <li><a href="junduyun.html">君都云酒店</a></li>
+                <li><a href="junboya.html">君铂雅酒店</a></li>
             </ul>
         </li>
         <li><a href="">房型体验</a></li>
         <li>
-            <a href="">会员权益</a>
+            <a href="">君都会</a>
             <i class="iconfont cli_op">&#xe60c;</i>
             <ul class="submenu">
                 <li><a href="">君兰</a></li>
@@ -208,67 +193,8 @@
 </html>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script src="js/swiper_r.js"></script>
 <script src="js/nav_o.js"></script>
-<script>
-    $(function () {
-        if (location.href.indexOf("#") == -1) {
-            location.href = location.href + "#";
-            location.reload();
-        }
-        var snum = $(".swiper-container-v>.swiper-wrapper>.swiper-slide").length;
-        var vSwiper = new Swiper(".swiper-container-v", {
-            direction: 'vertical',
-            mousewheel: true,
-            speed: 800,
-            pagination: {
-                el: '.swiper-container-v>.swiper-pagination',
-                clickable: true,
-            },
 
-            on: {
-                slideChangeTransitionEnd: function () {
-                    if (snum === this.activeIndex + 1) {
-                        vSwiper.mousewheel.disable()
-                    }
-                }
-            },
-        });
-
-        window.addEventListener("DOMContentLoaded", function () {
-            var body_fixed = {
-                init: function () {
-                    window.onscroll = this.throttle(this.isFixed, 0);
-                    this.isFixed()
-                }, isFixed: function () {
-                    H = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset;
-                    if (H > 0) {
-                        vSwiper.mousewheel.disable()
-                    } else {
-                        vSwiper.mousewheel.enable()
-                    }
-                }, throttle: function (fn, delay) {
-                    var timer = null;
-                    var _this = this;
-                    return function () {
-                        var context = _this, args = arguments;
-                        clearTimeout(timer);
-                        timer = setTimeout(function () {
-                            fn.apply(context, args)
-                        }, delay)
-                    }
-                }
-            };
-            body_fixed.init()
-        });
-    });
-
-    var hSwiper = new Swiper(".swiper-container-h", {
-        speed: 800,
-        loop: true,
-        pagination: {
-            el: '.swiper-container-h>.swiper-pagination',
-            clickable: true,
-        },
-    })
-</script>
 

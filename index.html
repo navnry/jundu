@@ -6,23 +6,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        (function (doc, win) {
-            var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-                    docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
-                };
-            if (!doc.addEventListener) return;
-            win.addEventListener(resizeEvt, recalc, false);
-            doc.addEventListener('DOMContentLoaded',
-                recalc, false
-            )
-        })(document, window);
-    </script>
+    <script src="js/rem.js"></script>
 </head>
 <body>
 <div class="header">
@@ -52,8 +38,8 @@
 </div>
 <div class="nav">
     <ul class="pormenu">
-        <li><a href="">首页</a></li>
-        <li class="on">
+        <li class="on"><a href="index.html">首页</a></li>
+        <li>
             <a href="javascript:void (0)" class="tab_c">感受君都</a>
             <i class="iconfont cli_op">&#xe60c;</i>
             <ul class="submenu">
@@ -68,9 +54,9 @@
             <a href="javascript:void (0)" class="tab_c">君都品牌</a>
             <i class="iconfont cli_op">&#xe60c;</i>
             <ul class="submenu">
-                <li><a href="">君都酒店</a></li>
-                <li><a href="">君都云酒店</a></li>
-                <li><a href="">君铂雅酒店</a></li>
+                <li><a href="jundujiudian.html">君都酒店</a></li>
+                <li><a href="junduyun.html">君都云酒店</a></li>
+                <li><a href="junboya.html">君铂雅酒店</a></li>
             </ul>
         </li>
         <li><a href="">房型体验</a></li>
@@ -128,22 +114,30 @@
                              style="background:url(images/home/part_01.png) center /cover no-repeat">
                             <div class="ul-txt">
                                 <ul>
-                                    <li>
+                                    <li class="ani" swiper-animate-effect="fadeInUp"
+                                        swiper-animate-duration=".5s"
+                                        swiper-animate-delay="0.0s">
                                         <h3>【山】</h3>
                                         <span>Mountain</span>
                                         <p>麓山</p>
                                     </li>
-                                    <li>
+                                    <li class="ani" swiper-animate-effect="fadeInUp"
+                                        swiper-animate-duration=".5s"
+                                        swiper-animate-delay="0.1s">
                                         <h3>【水】</h3>
                                         <span>Water</span>
                                         <p>湘水</p>
                                     </li>
-                                    <li>
+                                    <li class="ani" swiper-animate-effect="fadeInUp"
+                                        swiper-animate-duration=".5s"
+                                        swiper-animate-delay="0.2s">
                                         <h3>【洲】</h3>
                                         <span>Oasis</span>
                                         <p>橘洲</p>
                                     </li>
-                                    <li>
+                                    <li class="ani" swiper-animate-effect="fadeInUp"
+                                        swiper-animate-duration=".5s"
+                                        swiper-animate-delay="0.3s">
                                         <h3>【城】</h3>
                                         <span>City</span>
                                         <p>星城</p>
@@ -154,25 +148,44 @@
                         <div class="swiper-slide"
                              style="background:url(images/home/part_01_1.jpg) center /cover no-repeat">
                             <div class="column">
-                                <h2 style="top: -2rem;right: -2.2rem">君</h2>
-                                <h2 style="top: -0.8rem;right: -2.5rem">都</h2>
-                                <i style="top: .5rem;right: -2.5rem;"></i>
-                                <p>一盏灯，两壶酒</p>
-                                <p>三四好友，五味人生</p>
-                                <p>坐而论道</p>
-                                <p><br></p>
+                                <h2 class="ani" style="top: -2rem;right: -1rem" swiper-animate-effect="fadeInLeft"
+                                    swiper-animate-duration="1s"
+                                    swiper-animate-delay="0.0s">君</h2>
+                                <h2 style="top: -0.9rem;right: -1.3rem" class="ani" swiper-animate-effect="fadeInRight"
+                                    swiper-animate-duration="1s"
+                                    swiper-animate-delay="0.0s">都</h2>
+                                <i style="top: .2rem;right: -1.3rem;" class="ani" swiper-animate-effect="fadeInUp"
+                                   swiper-animate-duration="1s"
+                                   swiper-animate-delay="0.0s"></i>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                                   swiper-animate-delay="0.0s">一盏灯，两壶酒</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                                   swiper-animate-delay="0.1s">三四好友，五味人生</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                                   swiper-animate-delay="0.2s">坐而论道</p>
                             </div>
                         </div>
                         <div class="swiper-slide"
                              style="background:url(images/home/part_01_1.jpg) center /cover no-repeat">
                             <div class="column">
-                                <h2 style="top: -2rem;right: -2.2rem">君</h2>
-                                <h2 style="top: -0.8rem;right: -2.5rem">都</h2>
-                                <i style="top: .5rem;right: -2.5rem;"></i>
-                                <p>一盏灯，两壶酒</p>
-                                <p>三四好友，五味人生</p>
-                                <p>坐而论道</p>
-                                <p></p>
+                                <h2 class="ani" style="top: -2rem;right: -1rem" swiper-animate-effect="fadeInLeft"
+                                    swiper-animate-duration="1s"
+                                    swiper-animate-delay="0.0s">君</h2>
+                                <h2 style="top: -0.9rem;right: -1.3rem" class="ani" swiper-animate-effect="fadeInRight"
+                                    swiper-animate-duration="1s"
+                                    swiper-animate-delay="0.0s">都</h2>
+                                <i style="top: .2rem;right: -1.3rem;" class="ani" swiper-animate-effect="fadeInUp"
+                                   swiper-animate-duration="1s"
+                                   swiper-animate-delay="0.0s"></i>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                                   swiper-animate-delay="0.0s">一盏灯，两壶酒</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                                   swiper-animate-delay="0.1s">三四好友，五味人生</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                                   swiper-animate-delay="0.2s">坐而论道</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                                   swiper-animate-delay="0.3s"></p> swiper-animate-effect="fadeInUp"
+                                swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"
                             </div>
                         </div>
                     </div>
@@ -181,42 +194,66 @@
             </div>
             <div class="swiper-slide" style="background: url(images/home/part_02.jpg) center /cover no-repeat">
                 <div class="column">
-                    <h2>山</h2>
-                    <i></i>
-                    <p>麓山耸立，人文荟萃</p>
-                    <p>万物汇于山间</p>
-                    <p>在一山一景中</p>
-                    <p>寻一份世外的宁静</p>
+                    <h2 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.0s">山</h2>
+                    <i class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s"
+                       swiper-animate-delay="0.0s"></i>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.0s">麓山耸立，人文荟萃</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.1s">万物汇于山间</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.2s">在一山一景中</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.3s">寻一份世外的宁静</p>
                 </div>
             </div>
             <div class="swiper-slide" style="background: url(images/home/part_03.jpg) center /cover no-repeat">
                 <div class="column">
-                    <h2>水</h2>
-                    <i></i>
-                    <p>湘江奔流</p>
-                    <p>聚集溪流河川而浩浩北去</p>
-                    <p>在一山一水中</p>
-                    <p>感受水纳百川的气韵</p>
+                    <h2 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.0s">水</h2>
+                    <i class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s"
+                       swiper-animate-delay="0.0s"></i>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.0s">湘江奔流</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.1s">聚集溪流河川而浩浩北去</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.2s">在一山一水中</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.3s">感受水纳百川的气韵</p>
                 </div>
             </div>
             <div class="swiper-slide" style="background: url(images/home/part_04.jpg) center /cover no-repeat">
                 <div class="column">
-                    <h2>洲</h2>
-                    <i></i>
-                    <p>麓山耸立，人文荟萃</p>
-                    <p>万物汇于山间</p>
-                    <p>在一山一景中</p>
-                    <p>寻一份世外的宁静</p>
+                    <h2 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.0s">洲</h2>
+                    <i class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s"
+                       swiper-animate-delay="0.0s"></i>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.0s">麓山耸立，人文荟萃</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.1s">万物汇于山间</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.2s">在一山一景中</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.3s">寻一份世外的宁静</p>
                 </div>
             </div>
             <div class="swiper-slide" style="background: url(images/home/part_05.jpg) center /cover no-repeat">
                 <div class="column">
-                    <h2>城</h2>
-                    <i></i>
-                    <p>橘洲静卧，立于凌波之上</p>
-                    <p>环拥山间而藏于水间</p>
-                    <p>于江流洲畔间静心凝神</p>
-                    <p>感悟内心归于自然的静谧</p>
+                    <h2 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.0s">城</h2>
+                    <i class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s"
+                       swiper-animate-delay="0.0s"></i>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.0s">橘洲静卧，立于凌波之上</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.1s">环拥山间而藏于水间</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.2s">于江流洲畔间静心凝神</p>
+                    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                       swiper-animate-delay="0.3s">感悟内心归于自然的静谧</p>
                 </div>
             </div>
         </div>
@@ -306,72 +343,8 @@
 </html>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script src="js/swiper_r.js"></script>
 <script src="js/nav_o.js"></script>
-<script>
-    $(function () {
-        if (location.href.indexOf("#") === -1) {
-            location.href = location.href + "#";
-            location.reload();
-        }
 
-        var hSwiper = new Swiper(".swiper-container-h", {
-            speed: 800,
-            loop: true,
-            pagination: {
-                el: '.swiper-container-h>.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            }
-        });
-        var snum = $(".swiper-container-v>.swiper-wrapper>.swiper-slide").length;
-        var vSwiper = new Swiper(".swiper-container-v", {
-            direction: 'vertical',
-            mousewheel: true,
-            speed: 800,
-            pagination: {
-                el: '.swiper-container-v>.swiper-pagination',
-                clickable: true,
-            },
-
-            on: {
-                slideChangeTransitionEnd: function () {
-                    if (snum === this.activeIndex + 1) {
-                        vSwiper.mousewheel.disable()
-                    }
-                }
-            },
-        });
-
-        window.addEventListener("DOMContentLoaded", function () {
-            var body_fixed = {
-                init: function () {
-                    window.onscroll = this.throttle(this.isFixed, 0);
-                    this.isFixed()
-                }, isFixed: function () {
-                    H = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset;
-                    if (H > 0) {
-                        vSwiper.mousewheel.disable()
-                    } else {
-                        vSwiper.mousewheel.enable()
-                    }
-                }, throttle: function (fn, delay) {
-                    var timer = null;
-                    var _this = this;
-                    return function () {
-                        var context = _this, args = arguments;
-                        clearTimeout(timer);
-                        timer = setTimeout(function () {
-                            fn.apply(context, args)
-                        }, delay)
-                    }
-                }
-            };
-            body_fixed.init()
-        });
-    });
-
-</script>
 
