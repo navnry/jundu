@@ -192,16 +192,19 @@ html::-webkit-scrollbar {
     position: relative;
 }
 
+.pormenu > li.on > a {
+    color: #bd9466;
+}
 
 .pormenu > li:hover > a {
     transform: translate(.05rem, 0);
-    color: #ffffff;
+    color: #bd9466;
     transition: all .3s ease;
 }
 
 .pormenu > li > a {
     font-size: .18rem;
-    color: #aaaaaa;
+    color: #ffffff;
     display: block;
     cursor: pointer;
     transition: all .3s ease;
@@ -209,7 +212,7 @@ html::-webkit-scrollbar {
 
 
 .nav .tab_c.on {
-    color: #ffffff;
+    color: #bd9466;
     transform: translate(.05rem, 0);
 }
 
@@ -248,12 +251,12 @@ html::-webkit-scrollbar {
 }
 
 .nav .submenu li:hover a {
-    color: #ffffff;
+    color: #bd9466;
 }
 
 .nav .submenu li a {
     font-size: .16rem;
-    color: #aaaaaa;
+    color: #ffffff;
 
 }
 
@@ -460,6 +463,7 @@ html::-webkit-scrollbar {
     z-index: 2;
     color: #000000;
     letter-spacing: -.06rem;
+    font-weight: 600;
 }
 
 .swiper-container-v > .swiper-wrapper > .swiper-slide .column h2 {
@@ -490,7 +494,7 @@ html::-webkit-scrollbar {
     position: absolute;
     left: 0;
     top: 0;
-    filter: blur(.7rem);
+    filter: blur(.9rem);
     z-index: 0;
     transform: scale(1.3);
 }
